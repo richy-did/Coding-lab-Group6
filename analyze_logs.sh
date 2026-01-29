@@ -9,7 +9,7 @@ echo "Select log file to analyze:"
 echo "1) Heart Rate"
 echo "2) Temperature"
 echo "3) Water Usage"
-read -p "Enter choice (1-3): " choice
+read -p "Enter choice (1-3):" choice
 
 case $choice in
   1)
