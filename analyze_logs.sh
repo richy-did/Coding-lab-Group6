@@ -25,13 +25,13 @@ case $choice in
     TITLE="Water Usage Analysis"
     ;;
   *)
-    echo "❌ Invalid choice"
+    echo "Invalid choice"
     exit 1
     ;;
 esac
 
 if [ ! -f "$FILE" ]; then
-  echo "❌ Log file not found"
+  echo " Log file not found"
   exit 1
 fi
 
@@ -49,5 +49,4 @@ fi
   echo "Last entry: $(tail -n 1 "$FILE" | awk '{print $1}')"
   echo
 } >> "$REPORT"
-
-echo "✅ Analysis saved to $REPORT"
+echo " Analysis saved to $REPORT"
